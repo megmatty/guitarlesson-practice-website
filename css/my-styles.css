@@ -1,0 +1,387 @@
+ Layout  
+====================================
+html { /*for sticky footer*/
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 60px;
+}
+
+.feature {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.feature-row {
+	padding-top: 5px;
+}
+
+.feature-copy {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.feature-copy-small {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+
+footer { /*sticky footer shouldn't work but it does idk why lol*/
+	position: absolute;
+    left: 0;
+    height: 60px;
+	width: 100%;
+	background-color: #222;
+	border-color: #080808;
+	color: #9d9d9d;
+	text-align: center;
+	padding-top: 17px;
+}
+
+/* Jumbotron
+===================================*/
+
+.jumbotron {
+	background: linear-gradient(black 0%, transparent 100%), url('../img/guitar-bg.jpg') left top / cover no-repeat;
+	color: #fff;
+	padding: 150px 0;
+}
+
+
+/* Typography
+===================================*/
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+.lead {
+	margin-top: 30px;
+	color: #fff;
+}
+
+p,
+li {
+	color: #7f7777;
+	line-height: 1.75;
+	font-size: 1.1em;
+}
+
+.col-sm-4 h2 {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.contact a {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+
+/* Buttons
+===================================*/
+
+.btn-danger {
+	background-color: #cd5702;
+	border-color: #cd5702;
+    background-position: 50px 50px;
+	transition: all 0.5s ease 0s;
+}
+
+.btn-danger:hover {
+     background-color: #0e8c43;
+     border-color: #0e8c43;
+     background-position: 50px 50px;
+     color: #fff;
+}
+
+
+/* Icons
+===================================*/
+
+.icon {
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	border-radius: 100px;
+}
+
+.guitar {
+	background: url('../img/guitar-silhouette.png') center center no-repeat #4b433b;
+	background-size: 70px;
+}
+
+.piano {
+	background: url('../img/piano-keyboard.png') center center no-repeat #73675b;
+	background-size: 70px;
+}
+
+.voice {
+	background: url('../img/microphone.png') center center no-repeat #908172;
+	background-size: 70px;
+}
+
+#instructors,
+#studio,
+#contact-us {
+	padding-top: 60px;
+	margin-top: -60px;	
+}
+
+
+
+
+
+/* Media Queries
+===================================*/
+
+/*NOT MOBILE FIRST - NEED TO DO THAT WAY NEXT TIME*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+	.jumbotron {
+		padding: 100px 10px 50px;
+		margin-bottom: 0;
+	}
+	
+	.icon {
+		width: 110px;
+		height: 110px;
+	}
+	
+	.guitar,
+	.piano,
+	.voice {
+		background-size: 60px;
+	}
+	
+	.feature-copy {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	
+	.feature-copy-small {
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+	.feature {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.feature-copy {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	.feature-copy-small {
+		padding-top: 25px;
+	}
+
+	.feature-copy h2,
+	.feature-copy-small h2 {
+		margin-top: -5px;
+		margin-bottom: 10px;
+	}
+	
+	p,
+	li {
+		line-height: 1.5;
+		font-size: 1em;
+	}
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+	.jumbotron {
+		padding: 70px 15px 30px;
+		margin-bottom: 0;
+	}
+	
+	.feature-row {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.btn {
+		margin: 5% 30% 0;
+		display: block;
+	}
+
+	.icon {
+		width: 90px;
+		height: 90px;
+	}
+	
+	.guitar,
+	.piano,
+	.voice {
+		background-size: 50px;
+	}
+
+	.feature {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	
+	.col-sm-4 {
+		padding-bottom: 30px;
+	}
+	
+	.col-sm-4 h2 {
+		margin-bottom: 20px;
+	}
+
+	.col-sm-6 h2,
+	.contact {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.instructor-pic,
+	.studio {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.contact a {
+		font-size: 1.25em;
+	}
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+	.navbar-brand {
+		font-size: 1em;
+	}
+
+	.jumbotron {
+		padding: 100px 15px 40px;
+		margin-bottom: 30px;
+	}
+	
+	.btn {
+		margin: 15% 25% 0;
+		display: block;
+	}
+
+	.feature {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	
+	.col-sm-4 {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+	}
+
+	.icon {
+		width: 84px;
+		height: 84px;
+	}
+	
+	.guitar,
+	.piano,
+	.voice {
+		background-size: 46px;
+	}
+
+	.feature-copy,
+	.feature-copy-small {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+		
+	.instructor-pic,
+	.studio,
+	.storefront {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	
+	.contact,
+	.contact a {
+		display: block;
+		text-align: center;
+		line-height: 1.1;
+	}
+			
+}
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+	.jumbotron {
+		padding: 100px 15px 20px;
+		margin-bottom: 30px;
+	}
+
+	.btn {
+/*		margin: 0 25% 0;*/
+		display: block;
+	}
+
+	p {
+		text-align: justify;
+	}
+	
+	.lead {
+		text-align: left;
+	}
+	
+	.icon {
+		width: 70px;
+		height: 70px;
+	}
+	
+	.guitar,
+	.piano,
+	.voice {
+		background-size: 41px;
+	}
+	
+	.contact {
+		line-height: 1.5;
+	}
+
+	.contact a {
+		font-size: 1.1em;
+	}
+	
+	footer p {
+		text-align: center;
+		font-size: 8px;
+		line-height: 1.2;
+	}
+
+}
+
+
+
+
+
+
